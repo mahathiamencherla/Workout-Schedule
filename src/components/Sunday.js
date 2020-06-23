@@ -1,10 +1,32 @@
-import React from'react';
+import React from 'react';
 
-const Sunday = () => (
-    <div>
-        <h2>Sunday</h2>
-        <h3>Rest</h3>
-    </div>
-);
+class Sunday extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            visibility: false
+        } 
+    }
+    SundayToggle = () => {
+        this.setState((prevState) => {
+            return {
+                visibility: !prevState.visibility
+            }
+        });
+    }
+    render() {
+        return (
+            <div>
+            <button onClick={this.SundayToggle}>Sunday</button>
+            {this.state.visibility && 
+         <div>
+            <h3>Rest</h3>
+            </div>
+    }
+        </div>
+        )
+    }
+}
+
 
 export default Sunday;

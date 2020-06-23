@@ -1,8 +1,25 @@
-import React from'react';
+import React from 'react';
 
-const Tuesday = () => (
-    <div>
-        <h2>Tuesday</h2>
+class Tuesday extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            visibility: false
+        } 
+    }
+    tuesdayToggle = () => {
+        this.setState((prevState) => {
+            return {
+                visibility: !prevState.visibility
+            }
+        });
+    }
+    render() {
+        return (
+            <div>
+        <button onClick={this.tuesdayToggle}>Tuesday</button>
+            {this.state.visibility && 
+         <div>   
         <h3>Abs</h3>
         <p>7 min - Warm Up</p>
         <a target="_blank" href="https://www.youtube.com/watch?v=-p0PA9Zt8zk"><img src="http://img.youtube.com/vi/-p0PA9Zt8zk/0.jpg"
@@ -28,8 +45,12 @@ const Tuesday = () => (
         <a target="_blank" href="https://www.youtube.com/watch?v=cO2RqgslEjk&t=630s"><img src="http://img.youtube.com/vi/cO2RqgslEjk/0.jpg"
          width="250" height="150"/>
         </a>
-        
+        </div>
+    }
     </div>
-);
+        )
+    }
+}
+
 
 export default Tuesday;
