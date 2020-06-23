@@ -11,7 +11,7 @@ import Friday from './Friday';
 import Saturday from './Saturday';
 import Sunday from './Sunday';
 const WorkoutDashboard = () => (
-    <div>
+    <div className="schedule">
         <Monday/>
         <Tuesday/>
         <Wednesday/>

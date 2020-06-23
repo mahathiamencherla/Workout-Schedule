@@ -16,7 +16,7 @@ class Sunday extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="sunday">
             <button onClick={this.SundayToggle}>Sunday</button>
             {this.state.visibility && 
          <div>

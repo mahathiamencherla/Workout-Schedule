@@ -1,0 +1,62 @@
+.monday {
+    padding: 5px;
+    display: inline-block;
+    margin: 0 1em;
+    flex-grow: 1;
+    width: calc(22% - 2em); 
+    text-align: center;
+}
+
+.tuesday {
+    padding: 5px;
+    display: inline-block;
+    margin: 0 1em;
+    flex-grow: 1;
+    width: calc(22% - 2em); 
+    text-align: center; 
+}
+
+.wednesday {
+    padding: 5px;
+    display: inline-block;
+    margin: 0 1em;
+    flex-grow: 1;
+    width: calc(22% - 2em);  
+    text-align: center;
+}
+
+.thursday {
+    padding: 5px;
+    display: inline-block;
+    margin: 0 1em;
+    flex-grow: 1;
+    width: calc(22% - 2em); 
+    text-align: center;
+}
+
+.friday {
+    padding: 5px;
+    display: inline-block;
+    margin: 0 1em;
+    flex-grow: 1;
+    width: calc(35% - 2em);
+    text-align: center; 
+}
+
+.saturday {
+    padding: 5px;
+    display: inline-block;
+    margin: 0 1em;
+    flex-grow: 1;
+    width: calc(35% - 2em); 
+    text-align: center;
+}
+
+.sunday {
+    padding: 5px;
+    display: inline-block;
+    margin: 0 1em;
+    flex-grow: 1;
+    width: calc(35% - 2em); 
+    text-align: center;
+}

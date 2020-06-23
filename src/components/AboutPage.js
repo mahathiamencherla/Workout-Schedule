@@ -2,7 +2,7 @@
 // put ur pic
 import React from 'react';
 const AboutPage = () => (
-    <div>
+    <div className="about">
         <h2>About Me</h2>
         <p>I'm Mahathi Amencherla, an enthusiastic 22 year old looking to build real world applications!</p>
         <p>I created this app just for reference. I do not own any of these videos.</p>
