@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+//@import url('https://fonts.googleapis.com/css?family=Antic');
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: $m-size;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.is-active {
+    font-weight: bold;
+  }
+  
