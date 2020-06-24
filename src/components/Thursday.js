@@ -1,10 +1,19 @@
 import React from 'react';
+import moment from 'moment';
+
+const day = moment().day()
 
 class Thursday extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            visibility: false
+        if(day === 4) {
+            this.state = {
+                visibility: true
+            }
+        } else {
+            this.state = {
+                visibility: false
+            } 
         } 
     }
     thursdayToggle = () => {

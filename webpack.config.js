@@ -19,11 +19,16 @@ module.exports = {
                 "css-loader",
                 "sass-loader"
             ]
-        }]
+        },
+        {
+            test: /\.(png|jpg|jpeg)$/,
+            loader: 'url-loader'
+          }]
     },
     devtool: 'cheap-module-eval-source-map',
     devServer: {
-        contentBase: path.join(__dirname, 'public')
+        contentBase: path.join(__dirname, 'public'),
+        historyApiFallback: true
     }
 };
 

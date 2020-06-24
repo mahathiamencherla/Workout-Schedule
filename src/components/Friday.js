@@ -1,11 +1,20 @@
 import React from 'react';
+import moment from 'moment';
+
+const day = moment().day()
 
 class Friday extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            visibility: false
-        } 
+        if(day === 5) {
+            this.state = {
+                visibility: true
+            }
+        } else {
+            this.state = {
+                visibility: false
+            } 
+        }  
     }
     fridayToggle = () => {
         this.setState((prevState) => {
@@ -23,7 +32,7 @@ class Friday extends React.Component {
                 <h3>Intense Cardio/ HIIT</h3>
                 <p>35 min - 500 Calories</p>
                 <a target="_blank" href="https://www.youtube.com/watch?v=LeOHID-EDA0k"><img src="http://img.youtube.com/vi/LeOHID-EDA0/0.jpg"
-                 width="250" height="150"/>
+                 width="200" height="150"/>
                  </a>
                  </div>
     }

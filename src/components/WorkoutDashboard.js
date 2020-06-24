@@ -1,6 +1,4 @@
-// MON TUE WED THURS FRI SAT SUN
-// click on day to get drop down of workouts 
-// click on link to go to youtube workout
+// gif pointing towards that particular day saying TODAY'S PLAN!!!
 
 import React from 'react';
 import Monday from './Monday';
@@ -10,6 +8,7 @@ import Thursday from './Thursday';
 import Friday from './Friday';
 import Saturday from './Saturday';
 import Sunday from './Sunday';
+
 const WorkoutDashboard = () => (
     <div className="schedule">
         <Monday/>
