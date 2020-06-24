@@ -48,6 +48,7 @@ Header {
     border-radius: 5px;
 }
 
+
 header {
     padding: 40px;
     background-image: url("../../public/images/bg_small.png");
@@ -80,6 +81,26 @@ header {
     font-size: 20px;
 }
 
+.about img {
+    width:22x;
+    height:22px;
+    margin-right:5px;
+}
+
+.not-found {
+    color: white;
+    text-align: center;
+    font-size: $xl-size;
+}
+
+.not-found a {
+    text-decoration: none;
+    color: black;
+    font-size: $l-size;
+    padding: 20px;
+    background-color: #12A6B2;
+}
+
 @media (min-width: $desktop-breakpoint) {
     .about {
         width: 800px;
@@ -93,5 +114,5 @@ header {
     header {
     background-image: url("../../public/images/bg.png");
     }
-    }
+}
 
